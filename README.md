@@ -1,4 +1,4 @@
-# RiskLab
+# Scenario risk
 
 RiskLab compares static CVaR and nested conditional CVaR on a supplied finite
 scenario tree. It enumerates every full deterministic policy on that tree and shows terminal
@@ -58,7 +58,7 @@ python tools/check_highs.py
 # Serve docs/ with any static server for the browser inspector.
 ```
 
-[Browser inspector](https://midya8.github.io/risklab/) · [Derivation, contract and source ledger](METHOD.md)
+[Browser inspector](https://midya8.github.io/scenario-risk/) · [Derivation, contract and source ledger](METHOD.md)
 
 The browser lets you edit the complete exact input, select every full policy, inspect all leaf/node/continuation rows and nested chance-node certificates, and download the full report for native replay. Editing invalidates the old report and disables download until a successful run. All calculations stay local. No API, network model, paid service, private data or dataset is used.
 
