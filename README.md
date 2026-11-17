@@ -1,6 +1,6 @@
 # Scenario risk
 
-RiskLab compares static CVaR and nested conditional CVaR on a supplied finite
+This implementation compares static CVaR and nested conditional CVaR on a supplied finite
 scenario tree. It enumerates every full deterministic policy on that tree and shows terminal
 probabilities, tail weights and independently replayable certificates. The two
 objectives can select different policies.
@@ -26,7 +26,7 @@ This example was selected at candidate 15 (zero-based) by the disclosed seed-170
 
 The `ignored_branch` tree reaches a decision on a low-loss branch with probability 1/2 and a loss-10 branch with probability 1/2. At confidence 1/2, the root tail ignores the low-loss branch. Both complete policies have nested root value 10, even though one chooses loss 2 where loss 1 is available. The full root-optimal tie set contains both. Backward Bellman selection chooses the locally optimal continuation.
 
-Nested CVaR is not strictly monotone. RiskLab does **not** claim that every nested-root-optimal policy has optimal continuations. It separately exposes the root-optimal set, a first-index Bellman-selected policy and reached-decision continuation regrets. Off-path choices remain distinct full policies, and zero nominal reach does not invent a conditional posterior.
+Nested CVaR is not strictly monotone. Scenario risk does **not** claim that every nested-root-optimal policy has optimal continuations. It separately exposes the root-optimal set, a first-index Bellman-selected policy and reached-decision continuation regrets. Off-path choices remain distinct full policies, and zero nominal reach does not invent a conditional posterior.
 
 ## Static and nested tail calculations
 
